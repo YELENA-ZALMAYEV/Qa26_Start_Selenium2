@@ -49,5 +49,11 @@ public class Index {
         // by name
         WebElement inputS = wd.findElement(By.name("surename"));
         WebElement inputS1 = wd.findElement(By.cssSelector("[name='surename']"));
+
+
+        //By.linkText && By.partialLinkText - old
+
+        WebElement a3 = wd.findElement(By.linkText("Item 1"));
+        WebElement a4 = wd.findElement(By.partialLinkText("m 1"));
     }
 }

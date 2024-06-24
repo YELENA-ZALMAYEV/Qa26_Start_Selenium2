@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+
 import java.util.List;
 
 public class HomeWork{
@@ -29,19 +30,22 @@ public class HomeWork{
     List<WebElement> butType = wd.findElements(By.tagName(".a"));
 
 
+
         //by class
     WebElement cl1 = wd.findElement(By.className("navbar-component_nav__1X_4m"));
     WebElement cl2 = wd.findElement(By.cssSelector(".container"));
+  //  WebElement cl3 = wd.findElement(By.cssSelector(".translated-ltr"));
 
 
         //by id
         WebElement id1 = wd.findElement(By.id("root"));
         WebElement id2 = wd.findElement(By.cssSelector("#root"));
 
+
         //by attribute
         List<WebElement> verticalList1 = wd.findElements(By.cssSelector("[style = 'vertical-align: inherit']"));
-        WebElement attribute1 = wd.findElement(By.cssSelector("[class = 'translated-ltr']"));
-     //  WebElement
+
+
 
 
     }

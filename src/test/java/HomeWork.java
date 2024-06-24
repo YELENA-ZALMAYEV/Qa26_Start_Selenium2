@@ -39,6 +39,8 @@ public class HomeWork{
         WebElement id2 = wd.findElement(By.cssSelector("#root"));
 
         //by attribute
+        List<WebElement> verticalList1 = wd.findElements(By.cssSelector("[style = 'vertical-align: inherit']"));
+        WebElement attribute1 = wd.findElement(By.cssSelector("[class = 'translated-ltr']"));
      //  WebElement
 
 

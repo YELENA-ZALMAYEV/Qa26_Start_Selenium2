@@ -44,7 +44,7 @@ public class HomeWork{
 
         //by attribute
         List<WebElement> verticalList1 = wd.findElements(By.cssSelector("[style = 'vertical-align: inherit']"));
-
+       // WebElement div1 = wd.findElement(By.cssSelector("div[class='goog-gt-vt']"));
 
 
 

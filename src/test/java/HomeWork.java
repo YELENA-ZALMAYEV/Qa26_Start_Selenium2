@@ -27,9 +27,42 @@ public class HomeWork{
     WebElement tagN2 = wd.findElement(By.tagName("h1"));
     WebElement tagN3 = wd.findElement(By.cssSelector("div"));
     WebElement input = wd.findElement(By.tagName("input"));
-    List<WebElement> butType = wd.findElements(By.tagName(".a"));
+    List<WebElement> butType = wd.findElements(By.tagName("a"));
 
+        //cw
+        WebElement el = wd.findElement(By.tagName("body")); //<body>
+        WebElement el1 = wd.findElement(By.cssSelector("body"));
 
+        WebElement el2 = wd.findElement(By.tagName("div"));
+        WebElement el3 = wd.findElement(By.cssSelector("div"));
+
+        WebElement el4 = wd.findElement(By.tagName("h1"));
+        WebElement el5 = wd.findElement(By.cssSelector("h1"));
+
+        WebElement el6 = wd.findElement(By.tagName("a"));
+        WebElement el7 = wd.findElement(By.cssSelector("a"));
+
+        WebElement el8 = wd.findElement(By.tagName("form"));
+        WebElement el9 = wd.findElement(By.cssSelector("form"));
+
+        WebElement el10 = wd.findElement(By.tagName("input"));
+        WebElement el11 = wd.findElement(By.cssSelector("input"));
+
+        //cw class
+
+        WebElement el14 = wd.findElement(By.className("container"));
+        WebElement el15 = wd.findElement(By.cssSelector(".container"));
+
+        WebElement el16 = wd.findElement(By.className("navbar-component_nav__1X_4m"));
+        WebElement el17 = wd.findElement(By.cssSelector(".navbar-component_nav__1X_4m"));
+
+        //cw by id
+        WebElement el20 = wd.findElement(By.id("root"));
+        WebElement el21 = wd.findElement(By.cssSelector("#root"));
+
+        //cw attribute
+        WebElement el22 = wd.findElement(By.cssSelector("[href ='/home']"));
+        WebElement el23 = wd.findElement(By.cssSelector("[name='email']"));
 
         //by class
     WebElement cl1 = wd.findElement(By.className("navbar-component_nav__1X_4m"));

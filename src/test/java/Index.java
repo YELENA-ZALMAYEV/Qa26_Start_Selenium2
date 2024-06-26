@@ -15,7 +15,7 @@ public class Index {
     @BeforeClass
     public  void  setUp(){
         wd = new ChromeDriver();
-        wd.get("file:///C:/Users/zalmayev/Desktop/QA/QA%20Auto/L_2_/21.index.html");
+        wd.get("file:///C:/Users/zalmayev/Desktop/QA/QA%20Auto/L_2_CssSelector/21.index.html");
     }
 
     @Test
@@ -35,8 +35,10 @@ public class Index {
        WebElement button = wd.findElement(By.tagName("button"));
        WebElement button1 = wd.findElement(By.cssSelector("button"));
 
+
         List<WebElement> a = wd.findElements(By.tagName("a"));
         List<WebElement> list = wd.findElements(By.cssSelector("a"));
+
         //a.size();
 
         WebElement input = wd.findElement(By.tagName("input"));
@@ -45,6 +47,7 @@ public class Index {
         //by Class
         WebElement divContainer = wd.findElement(By.className("container"));
         WebElement divContainer1 = wd.findElement(By.cssSelector(".container"));
+
 
         List<WebElement> navList = wd.findElements(By.className("nav-item"));
         List<WebElement> navList1 = wd.findElements(By.cssSelector(".nav-item"));

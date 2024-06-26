@@ -146,6 +146,8 @@ public class HomeWork{
         WebElement el28 = wd.findElement(By.cssSelector("[placeholder*='ma']"));
         WebElement el34 = wd.findElement(By.xpath("//*[contains(@placeholder,'ma')]"));
 
+        WebElement ele60 = wd.findElement(By.xpath("//*[@rel='stylesheet']"));
+
     }
     @AfterClass
     public void postCondition() {

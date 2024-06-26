@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -16,6 +17,16 @@ public class Index {
         wd = new ChromeDriver();
         wd.get("file:///C:/Users/zalmayev/Desktop/QA/QA%20Auto/L_2_/21.index.html");
     }
+
+    @Test
+    public void tableTest(){
+        //Canada
+
+        WebElement canada = wd.findElement(By.cssSelector("tr:nth-child(3) td:last-child"));
+        Assert.assertEquals(canada.getText(),"Canada");
+    }
+
+
 
     @Test
     public void cssLocators(){
@@ -44,6 +55,15 @@ public class Index {
 
         //by attribute
         WebElement inputName = wd.findElement(By.cssSelector("[placeholder='Type your name']"));
+       //start
+       WebElement inputName1 = wd.findElement(By.cssSelector("[placeholder^='Type']")) ;
+       //end
+        WebElement inputName2 = wd.findElement(By.cssSelector("[placeholder$=name']"));
+        //contains
+        WebElement inputName3 = wd.findElement(By.cssSelector("[placeholder*='your']"));
+
+
+
         WebElement a2 = wd.findElement(By.cssSelector("[href='#item3']"));
 
         // by name

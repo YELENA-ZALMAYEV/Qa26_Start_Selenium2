@@ -147,7 +147,10 @@ public class HomeWork{
         WebElement el34 = wd.findElement(By.xpath("//*[contains(@placeholder,'ma')]"));
 
         WebElement ele60 = wd.findElement(By.xpath("//*[@rel='stylesheet']"));
-
+        WebElement ele61 = wd.findElement(By.xpath("//*[text()='ABOUT']"));
+        WebElement ele62 = wd.findElement(By.xpath("//*[starts-with(@name,'regis')]"));
+        WebElement ele63 = wd.findElement(By.xpath("//*[contains(@name,'ration')]"));
+        WebElement ele64 = wd.findElement(By.xpath("//*[contains(@name,'gist')]"));
     }
     @AfterClass
     public void postCondition() {

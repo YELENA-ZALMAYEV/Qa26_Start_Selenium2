@@ -19,6 +19,36 @@ public class HomeWork{
         wd = new ChromeDriver();
         wd.get("https://telranedu.web.app/login");
     }
+    @Test
+    public  void  classwork(){
+        //parent
+
+        WebElement el = wd.findElement(By.xpath("//h1/parent::div"));
+        WebElement el1 = wd.findElement(By.xpath("//h1/parent::*"));
+        WebElement el2 = wd.findElement(By.xpath("//h1/.."));
+                                                             //h1/ancestor::body
+        //h1/ancestor::div[1] or 2.3.4
+        //ancestor
+
+        WebElement el3 = wd.findElement(By.xpath("//h1/ancestor::*")); //all
+        WebElement el4 = wd.findElement(By.xpath("//h1/ancestor::div")); //two options
+        WebElement el5 = wd.findElement(By.xpath("//h1/ancestor::div[2]")); //one option
+
+        //ancestor or self
+
+        WebElement el6 = wd.findElement(By.xpath("//h1/ancestor-or-self::*"));
+        List<WebElement> list = wd.findElements(By.xpath("//h1/ancestor-or-self::*"));
+
+        //following-sibling
+        List<WebElement> list1 = wd.findElements(By.xpath("//h1/following-sibling::a"));
+
+        //preceding-sibling
+
+        WebElement el7 = wd.findElement(By.xpath("//a[last()]/preceding-sibling::a[2]"));
+        List<WebElement> list2 = wd.findElements(By.xpath("//a[last()]/preceding-sibling::*"));
+
+    }
+
 
     @Test
     public void  homeWork1(){
@@ -34,6 +64,7 @@ public class HomeWork{
         WebElement el = wd.findElement(By.tagName("body")); //<body>
         WebElement el1 = wd.findElement(By.cssSelector("body"));
         WebElement ele42 = wd.findElement(By.xpath("/html//body"));
+        WebElement ele41 = wd.findElement(By.xpath("//body"));
 
         WebElement el2 = wd.findElement(By.tagName("div"));
         WebElement el3 = wd.findElement(By.cssSelector("div"));
@@ -92,7 +123,7 @@ public class HomeWork{
 
         WebElement ele8 = wd.findElement(By.tagName("form"));
         WebElement ele9 = wd.findElement(By.cssSelector("form"));
-        WebElement ele41 = wd.findElement(By.xpath("/html//form"));
+        WebElement ele65 = wd.findElement(By.xpath("/html//form"));
 
         WebElement ele10 = wd.findElement(By.tagName("input"));
         WebElement ele11 = wd.findElement(By.cssSelector("input"));
@@ -135,10 +166,14 @@ public class HomeWork{
 
         WebElement el25 = wd.findElement(By.cssSelector("[placeholder='Email']"));
         WebElement el32 = wd.findElement(By.xpath("//*[@placeholder='Email']"));
+        WebElement el63 = wd.findElement(By.cssSelector("[placeholder^='Em']"));
+        WebElement el64 = wd.findElement(By.cssSelector("[placeholder$='il']"));
+        WebElement el65 = wd.findElement(By.cssSelector("[placeholder*='ai']"));
 
 
         WebElement el26 = wd.findElement(By.cssSelector("[placeholder^='Em']"));
         WebElement el33 = wd.findElement(By.xpath("//*[starts-with(@placeholder,'Em')]"));
+        WebElement el66 = wd.findElement(By.xpath("//*[starts-with(@placeholder,'Pas')]"));
 
         WebElement el27 = wd.findElement(By.cssSelector("[placeholder$='il']"));
         WebElement el35 = wd.findElement(By.xpath("//*[contains(@placeholder,'il')]"));
@@ -157,3 +192,4 @@ public class HomeWork{
         wd.quit();
     }
 }
+ //  //h1/.. - parent upp    //h1/parent::*  (name of element (os)
